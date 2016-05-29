@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="app/mainapp.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="main-container container">
+
+        <header style="color:#015EA4" class="text-center">
+            <H1>ANGULAR TIMES</H1>
+        </header>
+
+        <div ng-app="mainApp" ng-init="cityName = 'CHENNAI'" class="main-container">
+            <div id="subnav-bar">
+                <a href="http://www.thehindu.com/news/cities/" title="Cities, Bengaluru, Chennai, Coimbatore, Delhi, Hyderabad, Kochi, Kozhikode, Kolkata, Madurai, Mangaluru, Mumbai, Puducherry, Thiruvananthapuram, Tiruchirapalli, Vijayawada, Visakhapatnam"
+                    class="subactive subpar1 ">Cities</a>
+                <div id="firstlist">
+                    <li><a href="#chennai" ng-click="cityName='CHENNAI'">Chennai</a></li>
+                    <li><a href="#bangalore" ng-click="cityName='BENGALURU'">Bengaluru</a></li>
+                    <li><a href="#kochi" ng-click="cityName='KOCHI'">Kochi</a></li>
+                </div>
+           
+
+                <div class="clear"></div>
+            </div>
+            <div class="newsection-title">
+                <a ng-bind="cityName" href="http://www.thehindu.com/news/cities/bangalore/">Bengaluru</a>
+                <a href="http://www.thehindu.com/news/cities/bangalore/?service=rss" title=""><img src="http://www.thehindu.com/template/1-0-1/gfx/feed-icon-28x28.png" class="rssIcon" alt="RSS icon"></a>
+            </div>
+            <div class="line two10"></div>
+            <ng-view>
+
+
+
+            </ng-view>
+
+            <!--<news></news>-->
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
