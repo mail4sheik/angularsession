@@ -1,4 +1,11 @@
 # angularsession
+prerequisites: 
+in command line,
+ npm install http-server -g
+ 
+ in command line project path,
+ http-server 
+
 To present angular - First session - DI, scope, directive, Provider/services/factory and Controller
 
 
