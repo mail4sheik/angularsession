@@ -15,8 +15,9 @@ function chennaiController(pageCounter){
         this.counter =1;
     }
     
-    this.counter = pageCounter.chennaiVisitCounter;
+   // this.counter = pageCounter.chennaiVisitCounter;
 }
 
 
-appModule.controller('chennaiController',chennaiController);
+//appModule.controller('chennaiController',chennaiController);
+appModule.controller('chennaiController',['pageCounter',chennaiController]);

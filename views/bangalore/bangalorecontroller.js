@@ -15,7 +15,7 @@ function bangaloreController(pageCounter){
         this.counter =1;
     }
     
-    this.counter = pageCounter.bangaloreVisitCounter;
+   // this.counter = pageCounter.bangaloreVisitCounter;
 }
 
 

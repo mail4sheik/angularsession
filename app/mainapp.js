@@ -18,8 +18,6 @@ appModule.config(['$routeProvider','pageCounterProvider',function($routeProvider
         controller:'bangaloreController',
         controllerAs:'cityCtrl',
         templateUrl:"views/bangalore/news.html"
-        
-        
     })
     .when('/kochi',{
         controller:'kochiController',
