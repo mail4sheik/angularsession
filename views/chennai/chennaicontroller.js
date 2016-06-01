@@ -16,7 +16,7 @@ function chennaiController(pageCounter){
         this.counter =1;
     }
     
-   // this.counter = pageCounter.chennaiVisitCounter;
+    this.counter = pageCounter.chennaiVisitCounter;
 }
 
 

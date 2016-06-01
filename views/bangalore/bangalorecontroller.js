@@ -1,10 +1,10 @@
-function bangaloreController(pageCounter){
-    if(pageCounter.bangaloreVisitCounter){
+function bangaloreController(pageCounterServ){
+    if(pageCounterServ.bangaloreVisitCounter){
         
-        pageCounter.bangaloreVisitCounter+=1;
+        pageCounterServ.bangaloreVisitCounter+=1;
     }else{
         
-        pageCounter.bangaloreVisitCounter=1;
+        pageCounterServ.bangaloreVisitCounter=1;
     }
     
     if(this.counter){
@@ -15,7 +15,7 @@ function bangaloreController(pageCounter){
         this.counter =1;
     }
     
-   // this.counter = pageCounter.bangaloreVisitCounter;
+    this.counter = pageCounterServ.bangaloreVisitCounter;
 }
 
 

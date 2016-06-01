@@ -14,7 +14,7 @@ angular.module('allservices').service('pageCounterServ',function(){
    this.bangaloreVisitCounter = null;
 });
 
-angular.module('allservices').factory('pageCounterServ',function(){
+angular.module('allservices').factory('pageCounterFact',function(){
   var toReturnObject = {kochiVisitCounter:null}; 
   return toReturnObject; //mandatory
    

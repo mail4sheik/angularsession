@@ -1,10 +1,10 @@
-function kochiController(pageCounter){
-    if(pageCounter.kochiVisitCounter){
+function kochiController(pageCounterFact){
+    if(pageCounterFact.kochiVisitCounter){
         
-        pageCounter.kochiVisitCounter+=1;
+        pageCounterFact.kochiVisitCounter+=1;
     }else{
         
-        pageCounter.kochiVisitCounter=1;
+        pageCounterFact.kochiVisitCounter=1;
     }
     
     if(this.counter){
@@ -15,7 +15,7 @@ function kochiController(pageCounter){
         this.counter =1;
     }
     
-    //this.counter = pageCounter.kochiVisitCounter;
+    this.counter = pageCounterFact.kochiVisitCounter;
 }
 
 
