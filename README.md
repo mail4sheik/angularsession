@@ -17,6 +17,7 @@ Five pillars of  angular js
 4. Scope
 5. services. (provider,factory and service)
 
+Misko Hevery
 
 Topics:
 1. What is framework?
@@ -47,4 +48,15 @@ Topics:
 11. ng-route and ui-router
        
     
+Typescript
+1. What is typescript?
+2. Type declaration.
+3. class and interface.
+4. Arrow function    
+    
+    
 
+Installing typescript
+after node,
+https://www.typescriptlang.org/docs/tutorial.html
+https://code.visualstudio.com/Docs/languages/typescript
