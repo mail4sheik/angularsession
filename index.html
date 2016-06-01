@@ -4,8 +4,8 @@
     <script type="text/javascript" src="lib/angular.min.js"></script>
     <script type="text/javascript" src="lib/angular-route.min.js"></script>
     <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
-    
-    
+
+
     <script type="text/javascript" src="app/mainapp.js"></script>
     <script type="text/javascript" src="views/chennai/chennaicontroller.js"></script>
     <script type="text/javascript" src="views/bangalore/bangalorecontroller.js"></script>
@@ -22,7 +22,7 @@
             <H1>THE NGVIEW</H1>
         </header>
 
-        <div ng-app="mainApp" ng-init="cityName = 'CHENNAI'" class="main-container">
+        <div ng-app="mainApp" ng-init="cityName = 'CHENNAI'" class="main-container" >
             <div id="subnav-bar">
                 <a href="http://www.thehindu.com/news/cities/" title="Cities, Bengaluru, Chennai, Coimbatore, Delhi, Hyderabad, Kochi, Kozhikode, Kolkata, Madurai, Mangaluru, Mumbai, Puducherry, Thiruvananthapuram, Tiruchirapalli, Vijayawada, Visakhapatnam"
                     class="subactive subpar1 ">Cities</a>
@@ -38,12 +38,28 @@
                 <a href="http://www.thehindu.com/news/cities/bangalore/?service=rss" title=""><img src="http://www.thehindu.com/template/1-0-1/gfx/feed-icon-28x28.png" class="rssIcon" alt="RSS icon"></a>
             </div>
             <div class="line two10"></div>
-            
-            
-            <ng-view>
-            </ng-view>
 
-           <!-- <news></news>-->
+
+           <ng-view>
+            </ng-view>
+             <!---->
+            
+            <ui-view></ui-view>
+            
+<!--            <video id="vidTag" type="video/mp4"></video>
+            <script>
+                var videoElt = document.getElementById('vidTag');    
+                videoElt.src="video/test_Denel_Short_Web.mp4";
+                var bufferedSeconds,vidDuration,intvlId;
+               intvlId = setInterval(function(){
+                    bufferedSeconds = videoElt.buffered.end(0);vidDuration = videoElt.duration;
+                    if(bufferedSeconds >=vidDuration){clearInterval(intvlId);}
+                },500);
+            </script>-->
+            
+             <div news></div>
+            <div news></div>
+            <!--<news></news>-->
 
 
         </div>
